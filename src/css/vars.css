@@ -16,16 +16,31 @@
   --color-jet-70: #222;
   --color-jet-80: #191919;
   --color-black: #000;
+  /* Primary */
+  --color-orange: #e8441f;
+  --color-purple: #921f81;
+  /* Secondary */
+  --color-cute: #f7e1de;
+  --color-dark: #240821;
+  /* Tertiary */
+  --color-kyzantium: #480f40;
+  --color-kinzolin: #6d1761;
+  --color-kamethiste: #b35c9d;
+  --color-klycine: #d39ab8;
+  --color-kaumon: #f0a698;
+  --color-korail: #ec755b;
+  --color-kuivre: #a6301f;
+  --color-krouille: #651b20;
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
   --body-font-size--desktop: 1.125em; /* 18px */
   --body-font-size--print: 0.9375em; /* 15px */
   --body-line-height: 1.15;
-  --body-font-color: var(--color-jet-70);
-  --body-font-family: "Roboto", sans-serif;
+  --body-font-color: var(--color-dark);
+  --body-font-family: "Picon", sans-serif;
   --body-font-weight-bold: 500;
-  --monospace-font-family: "Roboto Mono", monospace;
+  --monospace-font-family: "JetBrains Mono", monospace;
   --monospace-font-weight-bold: 500;
   /* base */
   --body-background: var(--color-white);
@@ -33,16 +48,16 @@
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-thumb-color: var(--color-gray-10);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
-  --navbar-font-color: var(--color-white);
-  --navbar_hover-background: var(--color-black);
-  --navbar-button-background: var(--color-white);
+  --navbar-background: var(--color-dark);
+  --navbar-font-color: var(--color-orange);
+  --navbar_hover-background: var(--color-kyzantium);
+  --navbar-button-background: var(--color-cute);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
   --navbar-menu-border-color: var(--panel-border-color);
-  --navbar-menu-background: var(--color-white);
+  --navbar-menu-background: var(--color-cute);
   --navbar-menu-font-color: var(--body-font-color);
-  --navbar-menu_hover-background: var(--color-smoke-50);
+  --navbar-menu_hover-background: var(--color-kaumon);
   /* nav */
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-10);
