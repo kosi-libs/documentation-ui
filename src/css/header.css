@@ -1,4 +1,4 @@
-html.is-clipped--navbar {
+html.is-clipped--navbar-container {
   overflow-y: hidden;
 }
 
@@ -18,6 +18,14 @@ body {
   z-index: var(--z-index-navbar);
 }
 
+.navbar-brand-logo {
+  background-image: url(../img/logo-orange.svg);
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
 .navbar a {
   text-decoration: none;
 }
@@ -25,7 +33,7 @@ body {
 .navbar-brand .navbar-item:first-child,
 .navbar-brand .navbar-item:first-child a {
   color: var(--navbar-font-color);
-  font-size: calc(22 / var(--rem-base) * 1rem);
+  font-size: calc(25 / var(--rem-base) * 1rem);
 }
 
 .navbar-brand .separator {
@@ -59,6 +67,7 @@ body {
   display: flex;
   flex-shrink: 0;
   height: var(--navbar-height);
+  padding: 1rem 2rem;
 }
 
 .navbar-burger {
@@ -123,7 +132,6 @@ body {
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
-  padding: 0.5rem 1rem;
   position: relative;
 }
 
@@ -224,6 +232,7 @@ body {
 
   .navbar-menu {
     flex-grow: 1;
+    padding: 1rem 3rem;
   }
 
   .navbar-end {
@@ -276,4 +285,22 @@ body {
   color: var(--navbar-button-font-color);
   padding: 0 0.75em;
   white-space: nowrap;
+}
+
+.navbar-bottom-line-gradient {
+  z-index: var(--z-index-navbar);
+  box-shadow: 0 0.2rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+  height: var(--navbar-bottom-line-height);
+  top: var(--navbar-bottom-line-top);
+  position: sticky;
+  background-image: linear-gradient(90deg, var(--color-orange), var(--color-purple));
+}
+
+.navbar-bottom-line-linear {
+  z-index: var(--z-index-navbar);
+  box-shadow: 0 0.2rem 1.5rem 0 rgba(0, 0, 0, 0.25);
+  height: var(--navbar-bottom-line-height);
+  top: var(--navbar-bottom-line-top);
+  position: sticky;
+  background: var(--color-orange);
 }

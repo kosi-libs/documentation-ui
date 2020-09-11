@@ -50,7 +50,7 @@
   /* navbar */
   --navbar-background: var(--color-dark);
   --navbar-font-color: var(--color-orange);
-  --navbar_hover-background: var(--color-kyzantium);
+  --navbar_hover-background: var(--color-dark);
   --navbar-button-background: var(--color-cute);
   --navbar-button-border-color: var(--panel-border-color);
   --navbar-button-font-color: var(--body-font-color);
@@ -127,12 +127,15 @@
   --table-border-color: var(--panel-border-color);
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-smoke-90);
-  --footer-font-color: var(--color-gray-70);
-  --footer-link-font-color: var(--color-jet-80);
+  --footer-background: var(--color-dark);
+  --footer-font-color: var(--color-orange);
+  --footer-link-font-color: var(--color-orange);
   /* dimensions and positioning */
-  --navbar-height: calc(63 / var(--rem-base) * 1rem);
+  --navbar-height: calc(74 / var(--rem-base) * 1rem);
+  --navbar-bottom-line-height: calc(5 / var(--rem-base) * 1rem);
+  --navbar-bottom-line-top: var(--navbar-height);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
+  --header-bottom: calc(var(--navbar-bottom-line-top) + var(--navbar-bottom-line-height));
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
   --body-min-height: calc(100vh - var(--body-top));
