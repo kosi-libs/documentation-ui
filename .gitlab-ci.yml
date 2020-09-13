@@ -27,7 +27,7 @@ bundle-stable:
   - node_modules/.bin/gulp bundle
   artifacts:
     paths:
-    - build/ui-bundle.zip
+    - build/ui-bundle-v1.1.zip
 bundle-dev:
   stage: deploy
   except:
@@ -39,7 +39,7 @@ bundle-dev:
   artifacts:
     expire_in: 1 day # unless marked as keep from job page
     paths:
-    - build/ui-bundle.zip
+    - build/ui-bundle-v1.1.zip
 pages:
   stage: deploy
   only:
