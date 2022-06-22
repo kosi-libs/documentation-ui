@@ -1,1 +1,1 @@
-= UI bundle for Kodein Framework documentation
+= UI bundle for Kodein Open Source Initiative documentation
