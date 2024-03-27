@@ -2,7 +2,11 @@
   <div class="navbar-bottom-line-gradient"></div>
   {{> toolbar}}
   <div class="content">
-{{> article}}
+{{#if (eq page.layout '404')}}
+{{> article-404}}
+{{else}}
 {{> toc}}
+{{> article}}
+{{/if}}
   </div>
 </main>
